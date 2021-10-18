@@ -4,7 +4,7 @@
     <section>
       <h3>Cart Total: <span>&#8358;</span> {{ cartTotal.toFixed(2) }}</h3>
 
-      <div class="formcontainer">
+      <div class="flex bg-gray-10 my-5">
         <input type="email" v-model="email" placeholder="enter email to checkout">
         <hr />
         <div class="container">
@@ -16,9 +16,10 @@
             :callback="processPayment"
             :close="close"
             :embed="false"
+            class="hover:bg-green-700 focus:bg-green-700 focus:outline-none shadow-sm bg-green-500 rounded-sm py-2 px-6"
           >
             <i class="fas fa-money-bill-alt"></i>
-            Make Payment
+            checkout
           </paystack>
         </div>
       </div>
