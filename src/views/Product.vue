@@ -2,15 +2,16 @@
   <div class="flex items-center mx-5 md:mx-10">
     <img :src="require(`../assets/images/${product.image}`)" alt="" >
     <div class="md:ml-10 ">
-      <h3 class="">{{ product.name }}</h3>
-      <p class="leading-9">{{product.description }}</p>
-      <h3 class=""> <span>&#8358;</span> {{ product.price.toFixed(2) }}</h3>
+      <h3 class="text-2xl mb-5 text-gray-600">{{ product.name }}</h3>
+      <p class="leading-9 text-gray-600 mb-5">{{product.description }}</p>
+      <h3 class="text-xl text-green-600 mb-5"> <span>&#8358;</span> {{ product.price.toFixed(2) }}</h3>
 
       <div class="flex justify-between items-center"> 
-        <button class="hoverred-700 focus:bg-green-700 focus:outline-none shadow-sm bg-green-500 rounded-sm py-2 px-6" @click="addToCart()">Add</button>
-        <button class="hoverred-500 focus:bg-green-500 focus:outline-none shadow-sm bg-green-500 rounded-sm py-2 px-6" >View cart</button>
+        <button class="flex-1 text-white hoverred-700 mr-2 focus:bg-green-700 focus:outline-none shadow-sm bg-green-700 rounded-sm py-2 px-6" 
+        @click="addToCart()">Add to cart</button>
+        <a href="../cart" class="flex-1 text-white text-center hovered-500 ml-2 focus:bg-green-500 focus:outline-none shadow-sm bg-green-500 rounded-sm py-2 px-6" >View cart</a>
       </div>
-    </div>butt
+    </div>
     
   </div>
 </template>
@@ -31,12 +32,6 @@ export default {
     }
 
   }
-  // methods: {
-    /* back () {
-      this.$router.push('/')
-    } */
-
-  // }
 
 }
 </script>
