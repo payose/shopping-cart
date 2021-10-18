@@ -18,13 +18,14 @@ export default {
 </script>
 
 <style>
+@import "./assets/css/tailwind.css"
 
-#nav a {
+/* #nav a {
   font-weight: bold;
   color:black
 }
 
 #nav a.router-link-exact-active {
   color: #fff;
-}
+} */
 </style>
