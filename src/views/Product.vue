@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center mx-5 md:mx-10">
+  <div class="flex flex-col md:flex-row items-center mx-5 md:mx-10">
     <img :src="require(`../assets/images/${product.image}`)" alt="" >
-    <div class="md:ml-10 ">
+    <div class="mt-8  md:ml-10 ">
       <h3 class="text-2xl mb-5 text-gray-600">{{ product.name }}</h3>
       <p class="leading-9 text-gray-600 mb-5">{{product.description }}</p>
       <h3 class="text-xl text-green-600 mb-5"> <span>&#8358;</span> {{ product.price.toFixed(2) }}</h3>
